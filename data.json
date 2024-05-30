@@ -10,13 +10,13 @@
         "id":2,
         "book":"python",
         "imageurl":"../../../assets/img/m2.png",
-        "description":"Python is a high-level, interpreted, general-purpose programming language known for its simplicity and readability. Created by Guido van Rossum and first released in 1991, Python emphasizes code readability and allows programmers to express concepts in fewer lines of code compared to other languages like C++ or Java."
+        "description":"Python is a high-level, interpreted, general-purpose programming language known for its simplicity and readability. Created by Guido van Rossum and first released in 1991, Python emphasizes code readability and allows programmers to express concepts in fewer lines of code compared to other languages like C++ or Java. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming."
     },
     {
         "id":3,
         "book":"C#",
         "imageurl":"../../../assets/img/img1.png",
-        "description":"C# is a modern, object-oriented programming language developed by Microsoft as part of its .NET initiative. First released in 2000, C# was designed to be simple, powerful, type-safe, and flexible, catering to a wide range of development needs, from desktop and web applications to mobile and gaming."
+        "description":"C# is a modern, object-oriented programming language developed by Microsoft as part of its .NET initiative. First released in 2000, C# was designed to be simple, powerful, type-safe, and flexible, catering to a wide range of development needs, from desktop and web applications to mobile and gaming. It integrates seamlessly with the .NET framework, providing access to a vast library of functionalities and services."
     },
     {
         "id":4,

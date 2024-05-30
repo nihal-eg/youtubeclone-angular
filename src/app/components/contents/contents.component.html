@@ -4,7 +4,14 @@
             <div class="bg-danger w-100 h-50 rounded">
                 <img [src]="image" width="500px" height="300px" alt="">
             </div>
-            <div class="mt-4 border border-2 border-black rounded py-4">
+            <div class="card text-bg-light mb-3" style="max-width: 50rem;">
+                <div class="card-header">Doc.No:  {{bid}}</div>
+                <div class="card-body">
+                  <h5 class="card-title">{{book}}</h5>
+                  <p class="card-text">{{description}}</p>
+                </div>
+              </div>
+            <!-- <div class="mt-4 border border-2 border-black rounded py-4">
                 <div class="d-flex justify-content-around">
                     <div class="border border-black border-2 rounded py-3 mx-4 mb-2" style="width: 80px;height: 80px;">
                       Doc.No:  {{bid}}</div>
@@ -13,7 +20,8 @@
                 </div>
                 <div class="border border-black border-2 rounded  py-3 mx-4" style="width: 550px;height: 200px;">
                     {{description}}</div>
-            </div>
+            </div> -->
+            
 
         </div>
         <div class="col">
