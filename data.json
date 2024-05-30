@@ -2,33 +2,27 @@
     "items":[
         {
         "id":1,
-        "Book":"Java",
-        "imageurl":"",
-        "description":"Java Book"
+        "book":"Java",
+        "imageurl":"../../../assets/img/m3.png",
+        "description":"Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It was originally developed by Sun Microsystems and released in 1995. Java's primary goal is to allow application developers to write once, run anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation."
     },
     {
         "id":2,
-        "Book":"Java",
-        "imageurl":"",
-        "description":"Java Book"
+        "book":"python",
+        "imageurl":"../../../assets/img/m2.png",
+        "description":"Python is a high-level, interpreted, general-purpose programming language known for its simplicity and readability. Created by Guido van Rossum and first released in 1991, Python emphasizes code readability and allows programmers to express concepts in fewer lines of code compared to other languages like C++ or Java."
     },
     {
         "id":3,
-        "Book":"Java",
-        "imageurl":"",
-        "description":"Java Book"
+        "book":"C#",
+        "imageurl":"../../../assets/img/img1.png",
+        "description":"C# is a modern, object-oriented programming language developed by Microsoft as part of its .NET initiative. First released in 2000, C# was designed to be simple, powerful, type-safe, and flexible, catering to a wide range of development needs, from desktop and web applications to mobile and gaming."
     },
     {
         "id":4,
-        "Book":"Java",
-        "imageurl":"",
-        "description":"Java Book"
-    },
-    {
-        "id":5,
-        "Book":"Java",
-        "imageurl":"",
-        "description":"Java Book"
+        "book":"SQL",
+        "imageurl":"../../../assets/img/m1.png",
+        "description":"MySQL is an open-source relational database management system (RDBMS) that is widely used for managing and organizing data. It was initially developed by MySQL AB, a Swedish company, and is now owned by Oracle Corporation. MySQL is renowned for its speed, reliability, and ease of use, making it a popular choice for web applications, especially those built using the LAMP (Linux, Apache, MySQL, PHP/Perl/Python) stack."
     }
  
 ]

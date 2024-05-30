@@ -1,12 +1,18 @@
 <div class="container p-5" id="c1">
     <div class="row">
         <div class="col-7">
-            <div class="bg-danger w-100 h-75 rounded"></div>
+            <div class="bg-danger w-100 h-50 rounded">
+                <img [src]="image" width="500px" height="300px" alt="">
+            </div>
             <div class="mt-4 border border-2 border-black rounded py-4">
-                <span class="border border-black border-2 rounded px-5 py-3 mx-4"></span>
-                <span class="border border-black border-2 rounded px-5 py-3 mx-4"></span>
-                <span class="border border-black border-2 rounded px-5 py-3 mx-4"></span>
-                <span class="border border-black border-2 rounded px-5 py-3 mx-4"></span>
+                <div class="d-flex justify-content-around">
+                    <div class="border border-black border-2 rounded py-3 mx-4 mb-2" style="width: 80px;height: 80px;">
+                      Doc.No:  {{bid}}</div>
+                    <div class="border border-black border-2 rounded text-center   py-3 mx-4" style="width: 80px;height: 80px;">
+                        {{book}}</div>
+                </div>
+                <div class="border border-black border-2 rounded  py-3 mx-4" style="width: 550px;height: 200px;">
+                    {{description}}</div>
             </div>
 
         </div>
@@ -21,7 +27,8 @@
             <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
                 data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2 border"
                 tabindex="0" style="height: 500px; overflow-y: scroll;">
-                <div id="scrollspyHeading1" class="card mb-3 border border-0" style="max-width: 540px" (click)="click(1)">
+                <div id="scrollspyHeading1" class="card mb-3 border border-0" style="max-width: 540px"
+                    (click)="click(1)">
                     <div class="row g-0">
                         <div class="col-md-4 border rounded">
                             <img src="../../../assets/img/m3.png" class="img-fluid rounded-start" alt="...">
@@ -30,28 +37,30 @@
                             <div class="card-body">
                                 <p>This is a wider card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
-                                
+
                             </div>
                         </div>
                     </div>
                 </div>
-               
-                <div id="scrollspyHeading2" class="card mb-3 border border-0" style="max-width: 540px;">
+
+                <div id="scrollspyHeading2" class="card mb-3 border border-0" style="max-width: 540px;"
+                    (click)="click(2)">
                     <div class="row g-0">
-                        <div class="col-md-4 border rounded" >
+                        <div class="col-md-4 border rounded">
                             <img src="../../../assets/img/m2.png" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                               
-                                <p >This is a wider card with supporting text below as a natural
+
+                                <p>This is a wider card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
-                               
+
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="scrollspyHeading3" class="card mb-3 border border-0" style="max-width: 540px;">
+                <div id="scrollspyHeading3" class="card mb-3 border border-0" style="max-width: 540px;"
+                    (click)="click(3)">
                     <div class="row g-0">
                         <div class="col-md-4 border rounded">
                             <img src="../../../assets/img/img1.png" class="img-fluid rounded-start" alt="...">
@@ -64,7 +73,8 @@
                         </div>
                     </div>
                 </div>
-                <div id="scrollspyHeading4" class="card mb-3 border border-0" style="max-width: 540px;">
+                <div id="scrollspyHeading4" class="card mb-3 border border-0" style="max-width: 540px;"
+                    (click)="click(4)">
                     <div class="row g-0">
                         <div class="col-md-4 border rounded">
                             <img src="../../../assets/img/m1.png" class="img-fluid rounded-start" alt="...">
@@ -73,7 +83,6 @@
                             <div class="card-body">
                                 <p class="card-text">This is a wider card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
-                               
                             </div>
                         </div>
                     </div>
@@ -81,3 +90,4 @@
             </div>
         </div>
     </div>
+</div>

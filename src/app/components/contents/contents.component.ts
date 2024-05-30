@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { log } from 'console';
-import { response } from 'express';
 
 @Component({
   selector: 'app-contents',
@@ -10,10 +8,28 @@ import { response } from 'express';
   styleUrl: './contents.component.scss'
 })
 export class ContentsComponent {
-  click(id:number) {
-  let api: string = "http://localhost:3000/items/"+id;
-  console.log(fetch(api).then((y)=>y.json()).then((z)=>{console.log(z.data)}));
-  let a= fetch(api).then((y)=>y.json()).then((z)=>z.data)
+  image: any;
+  bid :number=0;
+  book:string="";
+  description:string="";
 
+  constructor() {
+    this.image = "../../../assets/img/img1.png";
+    this.description="Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It was originally developed by Sun Microsystems and released in 1995. Java's primary goal is to allow application developers to write once, run anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation.";
+    this.book="Java";
+    this.bid=1;
+
+  }
+  click(id: number) {
+    let api: string = "http://localhost:3000/items/" + id;
+     this.image = fetch(api)
+      .then((response) => response.json())
+      .then((data) => {this.image=data.imageurl;
+        this.bid=data.id;
+        this.book=data.book;
+        this.description=data.description;
+      })
+      .catch((error) => console.error(error));
+      
   }
 }
