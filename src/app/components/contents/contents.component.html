@@ -1,16 +1,43 @@
-<div class="container p-5" id="c1">
+<div class="container p-3" id="c1">
     <div class="row">
         <div class="col-7">
-            <div class="bg-danger w-100 h-50 rounded">
+            <div class="border border-2 border-black w-100 h-50 rounded text-center">
                 <img [src]="image" width="500px" height="300px" alt="">
             </div>
-            <div class="card text-bg-light mb-3" style="max-width: 50rem;">
-                <div class="card-header">Doc.No:  {{bid}}</div>
-                <div class="card-body">
-                  <h5 class="card-title">{{book}}</h5>
-                  <p class="card-text">{{description}}</p>
+            <p class="pt-2"><strong>Documents to read</strong></p>
+            <div class="mt-3 d-flex">
+                <div >
+                    <img src="../../../assets/img/man.jpg" alt="" width="40px" height="40px"  class="rounded-circle">
+                    <span class="mx-2">NSBlogs</span>
+
                 </div>
-              </div>
+                <button class="border border-0 rounded-5 bg-black text-white py-2 px-4">Subcribe</button>
+                <div style="margin-left: 100px;" class="d-flex">
+                    <div class="border rounded-4 py-1 px-1  mx-2">
+                        <i class="bi bi-hand-thumbs-up mx-1"></i>
+                        <span>2.6K</span>  |
+                        <i class=" mx-1 bi bi-hand-thumbs-down"></i>
+                    </div>
+                    <div class="border rounded-4 py-1 px-1 mx-2">
+                        <i class="bi bi-share-fill mx-1"></i>
+                        <span>share</span> 
+                       
+                    </div>
+                    <div class="border rounded-4 py-1 px-1">
+                        <i class="bi bi-download mx-1"></i>
+                        <span>Download</span>
+                      
+                    </div>
+                </div>
+            </div>
+
+            <div class="card text-bg-light mb-5 mt-3" style="max-width: 50rem;">
+                <div class="card-header bg-black text-white">Doc.No: {{bid}}</div>
+                <div class="card-body">
+                    <h5 class="card-title">{{book}}</h5>
+                    <p class="card-text">{{description}}</p>
+                </div>
+            </div>
             <!-- <div class="mt-4 border border-2 border-black rounded py-4">
                 <div class="d-flex justify-content-around">
                     <div class="border border-black border-2 rounded py-3 mx-4 mb-2" style="width: 80px;height: 80px;">
@@ -21,19 +48,19 @@
                 <div class="border border-black border-2 rounded  py-3 mx-4" style="width: 550px;height: 200px;">
                     {{description}}</div>
             </div> -->
-            
+
 
         </div>
         <div class="col">
             <div class="mb-3">
-                <span class="mx-2 border px-2 rounded">All</span>
-                <span class="mx-2 border px-2 rounded">From Ashwin</span>
-                <span class="mx-2 border px-2 rounded">From Nihal</span>
+                <span class="mx-2 border px-2 rounded border-2">All</span>
+                <span class="mx-2 border px-2 rounded border-2">From Ashwin</span>
+                <span class="mx-2 border px-2 rounded border-2">From Nihal</span>
             </div>
 
 
             <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
-                data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2 border"
+                data-bs-smooth-scroll="true" class="scrollspy-example  p-3 "
                 tabindex="0" style="height: 500px; overflow-y: scroll;">
                 <div id="scrollspyHeading1" class="card mb-3 border border-0" style="max-width: 540px"
                     (click)="click(1)">
